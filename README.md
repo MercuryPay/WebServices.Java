@@ -3,8 +3,7 @@ MercuryWebServicesSDK
 
 Java SDK and sample code for integrating to Mercury's WebServices platform.
 
-You will find the SDK source in the MercuryWebServiceJavaSDK folder and the sample integration application in the MercuryWebServiceJavaIntegrationExample folder and the JavaDoc under MercuryWebServiceJavaSDK/doc.
-
+You will find the SDK source in the MercuryWebServiceJavaSDK folder and the sample integration application in the MercuryWebServiceJavaIntegrationExample folder and the JavaDoc under MercuryWebServiceJavaSDK/doc. Please keep in mind this is a rudimentary integration with hard-coded soap-envelope strings which we plan on extending upon in the future.
 
 ©2013 Mercury Payment Systems, LLC - all rights reserved.
 
