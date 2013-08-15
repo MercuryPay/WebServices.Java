@@ -190,7 +190,7 @@ public class MercuryWSExample
 					{
 						MPSWebRequest mpswr = new MPSWebRequest(mWSURL);
 						mpswr.addParameter("tran", taDSIXML.getText()); //Set WebServices 'tran' parameter to the XML transaction request
-						mpswr.addParameter("pw", "123E2E"); //Set merchant's WebServices password
+						mpswr.addParameter("pw", "XYZ"); //Set merchant's WebServices password
 						mpswr.setWebMethodName((String)cmbWebMethod.getSelectedItem()); //Set WebServices webmethod to selected type
 						mpswr.setTimeout(10); //Set request timeout to 10 seconds
 						
