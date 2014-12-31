@@ -3,6 +3,8 @@ WebServices.Java
 
 This is a rudimentary integration with hard-coded soap-envelope strings it is intended as a jumpstart not as a full integration example.
 
+The repository has been validated with Eclipse Standard/SDK Luna Release 4.4.0
+
 This repository includes:
 
 * MercuryWebServiceJavaSDK -- a Java library that will make the necessary calls to Mercury's webservices.
