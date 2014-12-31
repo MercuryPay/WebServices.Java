@@ -1,4 +1,4 @@
-MercuryWebServicesSDK
+WebServices.Java
 =====================
 
 This is a rudimentary integration with hard-coded soap-envelope strings it is intended as a jumpstart not as a full integration example.
@@ -10,12 +10,7 @@ This repository includes:
 
 ##Step 1: Create the Soap Envelope
 
-In this example the soap envelope is hard coded
-
-```
-private final String mCreditTran = "<TStream>\n\t<Transaction>\n\t\t<MerchantID>118725340908147</MerchantID>\n\t\t<LaneID>02</LaneID>\n\t\t<TranType>Credit</TranType>\n\t\t<TranCode>Sale</TranCode>\n\t\t<InvoiceNo>1</InvoiceNo>\n\t\t<RefNo>1</RefNo>\n\t\t<Memo>MPS Example XML v1.0 - Java SDK</Memo>\n\t\t<PartialAuth>Allow</PartialAuth>\n\t\t<Frequency>OneTime</Frequency>\n\t\t<RecordNo>RecordNumberRequested</RecordNo>\n\t\t<Account>\n\t\t\t<EncryptedFormat>MagneSafe</EncryptedFormat>\n\t\t\t<AccountSource>Swiped</AccountSource>\n\t\t\t<EncryptedBlock>F40DDBA1F645CC8DB85A6459D45AFF8002C244A0F74402B479ABC9915EC9567C81BE99CE4483AF3D</EncryptedBlock>\n\t\t\t<EncryptedKey>9012090B01C4F200002B</EncryptedKey>\n\t\t\t<Name>MPS TEST</Name>\n\t\t</Account>\n\t\t<Amount>\n\t\t\t<Purchase>1.00</Purchase>\n\t\t</Amount>\n\t\t<TerminalName>MPS Java SDK</TerminalName>\n\t\t<ShiftID>MPS Shift</ShiftID>\n\t\t<OperatorID>MPS Operator</OperatorID>\n\t</Transaction>\n</TStream>",
-
-```
+In this example the transaction string is hard coded, you can find it at the top of MercuryWSExample.java.  There is a credit example and a prepaid example.  This value is then passed to the MercuryWebServicejavaSDK where it is formatted into a valid Soap Envelope using the buildSOAPRequest method.
 
 ##Step 2: Create a connection to webservices
 
