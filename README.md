@@ -1,6 +1,10 @@
 WebServices.Java
 =====================
 
+<a href="https://developer.vantiv.com/?utm_campaign=githubcta&utm_medium=hyperlink&utm_source=github&utm_content=gotquestions">Got questions? Connect with our experts on Vantiv ONE.</a>
+
+<a href="https://developer.vantiv.com/?utm_campaign=githubcta&utm_medium=hyperlink&utm_source=github&utm_content=codingforcommerce">Are you coding for commerce? Connect with our experts on Vantiv ONE.</a>
+
 This is a rudimentary integration with hard-coded soap-envelope strings it is intended as a jumpstart not as a full integration example.
 
 The repository has been validated with Eclipse Standard/SDK Luna Release 4.4.0
@@ -10,11 +14,11 @@ This repository includes:
 * MercuryWebServiceJavaSDK -- a Java library that will make the necessary calls to Mercury's webservices.
 * MercuryWebServiceJavaIntegrationExample -- a sample integration utilizing the above library
 
-##Step 1: Create the Soap Envelope
+## Step 1: Create the Soap Envelope
 
 In this example the transaction string is hard coded, you can find it at the top of MercuryWSExample.java.  There is a credit example and a prepaid example.  This value is then passed to the MercuryWebServicejavaSDK where it is formatted into a valid Soap Envelope using the buildSOAPRequest method.
 
-##Step 2: Create a connection to webservices
+## Step 2: Create a connection to webservices
 
 ```
 HttpsURLConnection conn = (HttpsURLConnection)mWebServiceURL.openConnection();
@@ -33,7 +37,7 @@ conn.setRequestProperty("Connection", "Close");
 ```
 
 
-##Step 3: Send Request
+## Step 3: Send Request
 
 ```
 OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
@@ -42,7 +46,7 @@ wr.flush();
 wr.close();
 ```
 
-##Step 4: Get Response
+## Step 4: Get Response
 
 ```
 rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
@@ -52,7 +56,7 @@ while ((responseBuffer = rd.readLine()) != null)
 ```
 
 
-###©2013 Mercury Payment Systems, LLC - all rights reserved.
+### ©2013 Mercury Payment Systems, LLC - all rights reserved.
 
 Disclaimer:
 This software and all specifications and documentation contained herein or provided to you hereunder (the "Software") are provided free of charge strictly on an "AS IS" basis. No representations or warranties are expressed or implied, including, but not limited to, warranties of suitability, quality, merchantability, or fitness for a particular purpose (irrespective of any course of dealing, custom or usage of trade), and all such warranties are expressly and specifically disclaimed. Mercury Payment Systems shall have no liability or responsibility to you nor any other person or entity with respect to any liability, loss, or damage, including lost profits whether foreseeable or not, or other obligation for any cause whatsoever, caused or alleged to be caused directly or indirectly by the Software. Use of the Software signifies agreement with this disclaimer notice.
